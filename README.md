@@ -6,18 +6,18 @@
 4. Final chat (CEO, ~20m)
 
 ## The Assignment (2 parts)
-We simulate a realistic product request. The goal is clear; the details are up to you. We value clarity, simplicity, and execution.
+We simulate a realistic product request. The product goal is clear; the details are up to you. We value clarity, simplicity, and execution.
 
-### Part 1 — Planning (tickets/spec)
-- Product asks for extracting and saving data from health records: vaccinations and castration.
+### Part 1 — Planning (tickets breakdown)
+- Product manager asks for extracting and saving data from existing provided health records: vaccinations and castration. We need to save the extracted data for later usage and display them in the React app. Build extraction pipeline which will work on many different health records, latin words and doctor shortcuts. Pipeline will save data in place and structure of your choice. Then Build a React + TypeScript app with basic UI reading from your data store.
 - You have read‑only access to a Supabase Postgres database (details below).
-- Your task: write clear, developer‑ready tickets to extract data, save them for later usage and display them in the React app.
-- Deliver your tickets in `Task_1_result.md`.
+- Your task: Help product manager break down the problem to multiple tickets. Just titles, maybe short description.  
+- Deliver your ticket stubs in `Task_1_result.md`.
 
 Note: Part 1 includes both vaccinations and castration. In Part 2 you will implement vaccinations only.
 
 ### Part 2 — Implementation (vaccinations only)
-Build extraction pipeline which will work on many different health records, latin words and doctor shortcuts. Pipeline will save data in place and structure of your choice. Then Build a React + TypeScript app with basic UI reading from your data store.
+
 1. A list page: show animal IDs with the latest vaccination date (each item links to the detail page).
 2. A detail page: show all vaccinations for a given animal.
 
@@ -30,11 +30,11 @@ Technologies, frameworks, hosting and approach, all is completely up to you.
 - Present them in React app
 
 #### Deliverables
-- `Task_1_result.md`: tickets/spec for Part 1
+- `Task_1_result.md`: Problem break down for Part 1
 - Working app (code in a public repo; fork or your own)
 - Deployed URL we can click and test
 - Short write‑up of decisions/assumptions in `Task_2_comments.md` (or your README)
-- Email the repo link and app URL to jan-at-vetstor.com
+- Email the repo link and app URL to jan -at- vetstor.com
 
 #### Recommendations
 - Keep it simple; choose tools appropriate for the job
@@ -66,7 +66,7 @@ Look at scripts/readData.ts how to read source.
 ---
 
 ## Evaluation Criteria
-- Correctness (vaccination extraction alghoritm, latest date logic, handling missing/duplicate/edge cases)
+- Correctness (vaccination extraction approach, latest date logic, handling missing/duplicate/edge cases)
 - Code quality (readability, structure, types, tests)
 - Simplicity (avoid unnecessary complexity)
 - Clarity of tickets/spec (assumptions, acceptance criteria, dependencies)
@@ -76,8 +76,7 @@ What we are not evaluating: pixel‑perfect UI, heavy infra, or complete product
 ---
 
 ## Getting Started (optional guidance)
-- You can scaffold with your preferred tool (Just must be React + TypeScript) and deploy to any host (e.g., Netlify, Vercel, Heroku...).
-- If using Supabase JS client: `@supabase/supabase-js` is the usual choice.
+- You can scaffold with your preferred tool (Just must be React + TypeScript) and deploy to any cloud host
 - Document your assumptions and decisions in `Task_2_comments.md`.
 
 Good luck—and have fun. Keep it focused and pragmatic.
